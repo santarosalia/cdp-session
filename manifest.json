@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "CDP-SESSION-TEST",
+    "version": "1.0.0",
+    "background" : {
+        "service_worker" : "src/serviceWorker.ts",
+        "type" : "module"
+    },
+    "action" : {
+
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "background",
+        "debugger"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "externally_connectable": {
+        "matches": [
+            "*://*/*"
+        ]
+    }
+}
